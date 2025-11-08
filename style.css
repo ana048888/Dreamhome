@@ -64,14 +64,16 @@ position: relative;
     margin: 0 auto;
 }
 .service-card{
-    background-color: white;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: transparent; 
+    border-radius: 0; 
+    box-shadow: none; 
+    padding: 0; 
+    text-align: center;
+    transition: transform 0.3s;
+
 }
-.service-card :hover{
-    transform: translateY(-5px);
+.service-card:hover{
+    transform: translateY(-3px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 .service-card img {
@@ -176,7 +178,7 @@ nav a:hover {
 /* ===== Contact Section ===== */
 #contact {
   padding: 60px 0;
-  background-color: #f4f1ee; /* світлий відтінок, що гарно пасує до мокко */
+  background-color: #f4f1ee; 
   text-align: center;
 }
 
@@ -385,4 +387,8 @@ footer p {
   object-fit: contain; 
   border-radius: 10px; 
   display: block;
+}
+.brand {
+    font-size: 2rem;
+    font-weight: 400;
 }
