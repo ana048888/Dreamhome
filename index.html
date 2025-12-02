@@ -11,15 +11,7 @@
 
   gtag('config', 'AW-17768131307');
 </script>
-<!-- Event snippet for Покупка conversion page -->
-<script>
-  gtag('event', 'conversion', {
-      'send_to': 'AW-17768131307/pTpfCI7BgskbEOvVwJhC',
-      'value': 1.0,
-      'currency': 'EUR',
-      'transaction_id': ''
-  });
-</script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,
         initial-scale=1.0">
@@ -132,13 +124,19 @@
   <p>If you have a project in mind, get in touch and we’ll make your dream home a reality!</p>
 
   <p class="phone"> Call us: 
-    <a href="tel:+353862328534">+353 86 232 8534</a></p>
+    <a href="tel:+353862328534"
+onclick="gtag('event', 'conversion', {'send_to': 'AW-17768131307/pTpfCI7BgskbEOvVwJhC'});">
++353 86 232 8534
+</a></p>
 
   <form class="contact-form" action="https://formspree.io/f/xovpoyqo" method="POST">
    <input type="text" name="name" placeholder="Your Name" required>
   <input type="tel" name="phone" placeholder="Your Phone Number" required>
   <textarea name="message" placeholder="Your Message" required></textarea>
-  <button type="submit">Send Message</button>
+  <button type="submit"
+onclick="gtag('event', 'conversion', {'send_to': 'AW-17768131307/pTpfCI7BgskbEOvVwJhC'});">
+Send Message
+</button>
   </form>
 </section>
 <!-- ===== Footer ===== -->
